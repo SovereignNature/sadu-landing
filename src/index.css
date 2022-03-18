@@ -1,0 +1,86 @@
+html {
+  font-size: 8px;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(to right, #003E3E 0%, #0F0F0F 100%);
+  backdrop-filter: blur(47.5334px);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50rem;
+  margin-right: 50rem;
+  color: white;
+}
+
+.hero .hero__title {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.hero .hero__title h1 {
+  font-size: 7rem;
+  font-weight: 200;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
+.hero .hero__title h2 {
+  font-size: 6rem;
+  font-weight: 100;
+  line-height: 1;
+  text-align: center;
+  margin: 0;
+}
+
+.hero .hero__btn {
+  background: linear-gradient(to right, #697E7F 0%, #190634 100%);
+  width: 100%;
+  padding: 2rem;
+  border: none;
+  border-radius: 2rem;
+  color: #DFCBD0;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  transition: all .2s;
+}
+.hero .hero__btn:hover {
+  cursor: pointer;
+  border-bottom: 4px solid #003E3E;
+  transform: translateY(-4px);
+}
+
+.hero p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.hero p a{
+  color: #fff;
+  font-weight: 600;
+  transition: letter-spacing .2s;
+}
+
+.hero p a:hover {
+  letter-spacing: 1.5px;
+}
+
+.hero .hero__scroll {
+  margin-top: 10rem;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
