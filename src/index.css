@@ -1,9 +1,46 @@
+@font-face {
+  font-family: 'Metropolis';
+  src: url('./assets/fonts/Metropolis-Regular.eot');
+  src: local('Metropolis Regular'), local('Metropolis-Regular'),
+      url('./assets/fonts/Metropolis-Regular.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/Metropolis-Regular.woff2') format('woff2'),
+      url('./assets/fonts/Metropolis-Regular.woff') format('woff'),
+      url('./assets/fonts/Metropolis-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  src: url('./assets/fonts/Metropolis-Bold.eot');
+  src: local('Metropolis Bold'), local('Metropolis-Bold'),
+      url('./assets/fonts/Metropolis-Bold.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/Metropolis-Bold.woff2') format('woff2'),
+      url('./assets/fonts/Metropolis-Bold.woff') format('woff'),
+      url('./assets/fonts/Metropolis-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  src: url('./assets/fonts/Metropolis-Thin.eot');
+  src: local('Metropolis Thin'), local('Metropolis-Thin'),
+      url('./assets/fonts/Metropolis-Thin.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/Metropolis-Thin.woff2') format('woff2'),
+      url('./assets/fonts/Metropolis-Thin.woff') format('woff'),
+      url('./assets/fonts/Metropolis-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
 html {
   font-size: 8px;
 }
 body {
   margin: 0;
   height: 100vh;
+  font-family: 'Metropolis';
   background: linear-gradient(to right, #003E3E 0%, #0F0F0F 100%);
   backdrop-filter: blur(47.5334px);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -12,7 +49,64 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  margin-left: 50rem;
+  margin-right: 50rem;
+  color: white;
+  font-family: 'Metropolis';
+}
+
+.info  h1 {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+.info p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.info p a{
+  color: #fff;
+  font-weight: 600;
+  transition: letter-spacing .2s;
+}
+
+.info p a:hover {
+  letter-spacing: 1.5px;
+}
+
+.info .info__btn {
+  background: linear-gradient(to right, #697E7F 0%, #190634 100%);
+  width: 100%;
+  padding: 2rem;
+  border: none;
+  border-radius: 2rem;
+  color: #DFCBD0;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  transition: all .2s;
+}
+
+.info .info__btn:hover {
+  cursor: pointer;
+  border-bottom: 4px solid #003E3E;
+  transform: translateY(-4px);
+}
+
 .hero {
+  font-family: 'Metropolis';
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,12 +193,12 @@ body {
 }
 
 .hero .hero__scroll .scroll .ball{
-  transition: all .3s ease-out;
+  transition: all .5s ease-out;
   transform: translateY(0);
 }
 
 .hero .hero__scroll .scroll:hover .ball{
-  transition: all .3s ease-out;
+  transition: all .5s ease-out;
   transform: translateY(8px);
 }
 
@@ -118,6 +212,7 @@ body {
 }
 
 .about {
+  font-family: 'Metropolis';
   padding: 10rem 50rem;
   color: white;
 }
@@ -137,6 +232,7 @@ body {
 }
 
 .collection {
+  font-family: 'Metropolis';
   padding: 10rem 50rem;
   color: white;
 }
@@ -189,6 +285,7 @@ body {
 }
 
 .faq {
+  font-family: 'Metropolis';
   padding: 10rem 50rem;
   color: white;
 }

@@ -8,12 +8,7 @@ import MarketplacePage from './MarketplacePage';
 import NotFoundPage from './NotFoundPage';
 
 import axios from 'axios';
-axios.interceptors.response.use(
-  (response) => {
-    console.log(response);
-    return response
-  }
-);
+
 
 
 async function getInjectedAccounts() {
@@ -56,7 +51,7 @@ export default function App() {
         </div>
 
           <Routes>
-            <Route exact path='/' element={!account ? <LandingPage/> : <RequiredAuth><MarketplacePage/></RequiredAuth>}/>
+            <Route exact path='/' element={<LandingPage/>}/>
             <Route path="/gallery" element={<RequiredAuth><GalleryPage/></RequiredAuth>} />
             <Route path="/marketplace" element={<RequiredAuth><MarketplacePage/></RequiredAuth>} />
             <Route path="*" element={<NotFoundPage/>} />
