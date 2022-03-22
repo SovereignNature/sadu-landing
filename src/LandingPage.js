@@ -1,5 +1,7 @@
 import React from 'react';
 import logo from './assets/sadu-logo.png';
+import Accordion from 'react-bootstrap/Accordion';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function LandingPage(){
     return(
@@ -80,8 +82,73 @@ function LandingPage(){
         </div>
         <div className="faq">
             <h2 className="faq__title">Frequently Asked Questions</h2>
+            <Accordion>
+                <Accordion.Item eventKey="0">
+                <Accordion.Header>I connected the right wallet to the app but it shows that my NFTree belongs to a different address. Why?</Accordion.Header>
+                <Accordion.Body>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est laborum.
+                </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="1">
+                    <Accordion.Header>Whom can I contact if I have questions regarding the marketplace?</Accordion.Header>
+                    <Accordion.Body>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est laborum.
+                    </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="2">
+                    <Accordion.Header>How can I get KSM to my account?</Accordion.Header>
+                    <Accordion.Body>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est laborum.
+                    </Accordion.Body>
+                </Accordion.Item>
+            </Accordion>
         </div>
-
+        <footer className="footer">
+            <div className="footer__logo">
+                <img className="logo" src={logo} alt='Sadu logo'/>
+                <p>Copyright c 2022 Sovereign Nature Initiative | All Rights Reserved</p>
+                <p>Powered By S Sovereign Nature Initiative | Built On Unique</p>
+            </div>
+            <div className="footer__link">
+                <p>About us</p>
+                <ul>
+                    <li><a href="#">Who we are</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div className="footer__link">
+                <p>Contact us</p>
+                <ul>
+                    <li><a className="link" href="#">info@sadu.io</a></li>
+                </ul>
+            </div>
+            <div className="footer__link">
+                <p>Follow Sadu</p>
+                <ul>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Medium</a></li>
+                </ul>
+            </div>
+        </footer>
         </>
     );
 }

@@ -34,6 +34,11 @@
   font-style: normal;
 }
 
+::selection {
+  color: #fff;
+  background: #439595;
+}
+
 html {
   font-size: 8px;
 }
@@ -219,6 +224,7 @@ body {
 .about .about__title {
   font-size: 4rem;
   font-weight: 400;
+  margin-bottom: 4rem;
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
@@ -240,6 +246,7 @@ body {
 .collection .collection__title {
   font-size: 4rem;
   font-weight: 400;
+  margin-bottom: 4rem;
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
@@ -292,7 +299,94 @@ body {
 .faq .faq__title {
   font-size: 4rem;
   font-weight: 400;
+  margin-bottom: 4rem;
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
+}
+
+.faq .accordion .accordion-item {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-right: none;
+  border-left: none;
+}
+
+.faq .accordion .accordion-item .accordion-header{
+  padding: 2.5rem 1.5rem;
+}
+
+.faq .accordion .accordion-item button {
+  background-color: transparent;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.faq .accordion .accordion-item button::after {
+  background-image: url('./assets/chevron.png');
+  transform: rotate(0deg)
+}
+
+.faq .accordion .accordion-button:not(.collapsed)::after {
+  background-image: url('./assets/chevron.png');
+  transform: rotate(90deg)
+}
+
+.faq .accordion .accordion-item button:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.faq .accordion .accordion-collapse .accordion-body {
+  border: 1px solid #fff;
+  border-bottom: none;
+  padding: 3rem;
+  font-size: 2rem;
+}
+
+.footer {
+  font-family: 'Metropolis';
+  color: #fff;
+  min-height: 30rem;
+  width: 100%;
+  padding-top: 4rem;
+  padding-left: 50rem;
+  padding-right: 50rem;
+  border-top: 1px solid #fff;
+  display: inline-grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+}
+
+.footer .footer__logo {
+  font-size: 1.25rem;
+}
+
+.footer .footer__logo .logo {
+  width: 16%;
+  margin-bottom: 6rem;
+}
+
+.footer .footer__link {
+  font-size: 1.75rem;
+  padding-left: 2rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer .footer__link ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer .footer__link ul li{
+  padding-bottom: 1.5rem;
+}
+
+.footer .footer__link ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer .footer__link ul li a.link {
+  color: #fff;
+  text-decoration: underline;
 }
