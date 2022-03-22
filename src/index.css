@@ -17,6 +17,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 10rem;
   margin-left: 50rem;
   margin-right: 50rem;
   color: white;
@@ -29,7 +30,7 @@ body {
 
 .hero .hero__title h1 {
   font-size: 7rem;
-  font-weight: 200;
+  font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
   text-align: center;
@@ -38,7 +39,7 @@ body {
 
 .hero .hero__title h2 {
   font-size: 6rem;
-  font-weight: 100;
+  font-weight: 600;
   line-height: 1;
   text-align: center;
   margin: 0;
@@ -77,10 +78,124 @@ body {
 }
 
 .hero .hero__scroll {
+  text-align: center;
   margin-top: 10rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.hero .hero__scroll .scroll{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .hero__scroll .scroll:hover{
+  cursor: pointer;
+}
+
+.hero .hero__scroll .scroll .chevron{
+  transition: all .3s ease-out;
+  transform: translateY(0);
+}
+
+.hero .hero__scroll .scroll .ball{
+  transition: all .3s ease-out;
+  transform: translateY(0);
+}
+
+.hero .hero__scroll .scroll:hover .ball{
+  transition: all .3s ease-out;
+  transform: translateY(8px);
+}
+
+.hero .hero__scroll .scroll:hover .chevron{
+  transition: all .3s ease-out;
+  transform: translateY(8px);
+}
+
+.hero .hero__scroll p {
+  font-weight: 200;
+}
+
+.about {
+  padding: 10rem 50rem;
+  color: white;
+}
+.about .about__title {
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about .about__text {
+  font-size: 2rem;
+  font-weight: 200;
+  line-height: 2;
+  
+}
+
+.collection {
+  padding: 10rem 50rem;
+  color: white;
+}
+
+.collection .collection__title {
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.collection .collection__cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collection .collection__cards .card {
+  background-color: #203D3D;
+  margin: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 0;
+  box-shadow: 0px 0px 5px 3px rgba(32, 61, 61, 0.44);
+}
+
+.collection .collection__cards .card .card__title {
+  background-color: #C5FFE5;
+  color: #1E1B1B;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 2.25rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.collection .collection__cards .card .card__content {
+  padding: 2rem 3rem;
+}
+
+.collection .collection__cards .card .card__content .card__text{
+  font-size: 2rem;
+}
+
+.collection .collection__cards .card .card__content .card__list{
+  font-size: 2rem;
+}
+
+.faq {
+  padding: 10rem 50rem;
+  color: white;
+}
+.faq .faq__title {
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
 }
