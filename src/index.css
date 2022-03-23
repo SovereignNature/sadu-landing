@@ -161,6 +161,11 @@ body {
   transform: translateY(-4px);
 }
 
+.hero .hero__btn .chevron-right {
+  margin-left: 2rem;
+  transform: rotate(-90deg);
+}
+
 .hero p {
   font-size: 2rem;
   text-align: center;
@@ -355,16 +360,30 @@ body {
   padding-right: 50rem;
   border-top: 1px solid #fff;
   display: inline-grid;
-  grid-template-columns: 3fr 1fr 1fr 1fr;
+  grid-template-columns: minmax(min-content, 2fr) repeat(3,minmax(max-content, 1fr));
 }
 
 .footer .footer__logo {
   font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .footer .footer__logo .logo {
   width: 16%;
   margin-bottom: 6rem;
+}
+
+.footer .footer__logo .poweredBy {
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer__logo .poweredBy .sni-brand {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.footer .footer__logo .poweredBy .unique {
+  margin-left: 1rem;
 }
 
 .footer .footer__link {
@@ -385,8 +404,106 @@ body {
 .footer .footer__link ul li a {
   color: #fff;
   text-decoration: none;
+  transition: letter-spacing .2s;
 }
+
+.footer .footer__link ul li a:hover {
+  letter-spacing: 1.5px;
+}
+
 .footer .footer__link ul li a.link {
   color: #fff;
   text-decoration: underline;
+}
+
+.tutorial {
+  font-family: 'Metropolis';
+  margin: 20rem 50rem;
+
+  color: #fff;
+}
+
+.tutorial .carousel {
+  color: #fff;
+  width: 100%;
+  min-height: min-content;
+}
+
+.tutorial .tutorial__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tutorial .tutorial__buttons .tutorial__button {
+  background-color: #203D3D;
+  color: #fff;
+  font-size: 2rem;
+  border: none;
+
+  padding: 1rem 2rem ;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 5px 4px rgba(32, 61, 61, 0.44);
+  transition: box-shadow .2s;
+}
+.tutorial .tutorial__buttons .tutorial__button:not(:last-of-type) {
+  margin-right: 2rem;
+}
+
+.tutorial .tutorial__buttons .tutorial__button:hover {
+  
+  box-shadow: 0px 0px 4px 3px rgba(197, 255, 229, 0.80);
+}
+
+.tutorial .tutorial__buttons .tutorial__button.active {
+  background-color: #c5ffe5;
+  color: #203D3D;
+}
+
+.tutorial .carousel .carousel-inner {
+  text-align: center;
+  padding: 5rem;
+}
+
+.tutorial .carousel .carousel-inner .carousel__img {
+  width: 100%
+}
+
+.tutorial .carousel .carousel-inner .carousel__content .carousel__list {
+  text-align: left;
+  margin: 5rem 3rem;
+  counter-reset: number;
+  list-style-type: none;
+}
+
+.tutorial .carousel .carousel-inner .carousel__content .carousel__list .carousel__item::before{
+  counter-increment: number;
+  content: counter(number)"\a0";
+  font-size: 4rem;
+  margin-right: 2rem;
+}
+
+.tutorial .carousel .carousel-inner .carousel__content .carousel__list .carousel__item {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tutorial .carousel .carousel-inner .carousel__content .carousel__list .carousel__item {
+
+  column-gap: 2rem;
+}
+
+.tutorial .carousel .carousel-inner .carousel__content .carousel__list .carousel__item .item__title {
+  font-size: 1.5rem;
+  line-break: strict;
+}
+
+.tutorial .carousel .carousel-inner .carousel__content .carousel__list .carousel__item .item__text {
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+}
+
+.tutorial .carousel .carousel-inner .carousel__content .carousel__list .carousel__item .item__text .subtext {
+  font-size: 1rem;
 }
