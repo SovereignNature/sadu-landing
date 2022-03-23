@@ -11,7 +11,6 @@ function LandingPage(){
     let currentYear = new Date().getFullYear();
 
     const onStep = (number) => {
-        console.log('clicked ' + number);
         setIndex(number);
     }
 
@@ -59,34 +58,24 @@ function LandingPage(){
                     <div className="carousel__content">
                         <ol className='carousel__list'>
                             <li className='carousel__item'>
-                                <div className="item">
                                 <p className='item__title'>Download the Plugin</p>
                                 <p className='item__text'>XXXXXXXXXXXXXX</p>
-                                </div>
                             </li>
                             <li className='carousel__item'>
-                                <div className="item">
                                 <p className='item__title'>Create the wallet</p>
                                 <p className='item__text'>XXXXXXXXXXXXXX</p>
-                                </div>
                             </li>
                             <li className='carousel__item'>
-                                <div className="item">
                                 <p className='item__title'>Buy KSM</p>
                                 <p className='item__text'>Buying KSM online with fiat.</p>
-                                </div>
                             </li>
                             <li className='carousel__item'>
-                                <div className="item">
                                 <p className='item__title'>Load KSM to your wallet</p>
                                 <p className='item__text'>XXXXXXXXXXXXXX</p>
-                                </div>
                             </li>
                             <li className='carousel__item'>
-                                <div className="item">
                                 <p className='item__title'>Enjoy the exhibition!</p>
                                 <p className='item__text'>Explore the NFTs and view them in your gallery</p>
-                                </div>
                             </li>
                         </ol>
                     </div>
