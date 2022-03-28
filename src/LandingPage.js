@@ -22,11 +22,11 @@ function LandingPage(){
                 <h1>Genesis Eco-conscious</h1>
                 <h2>NFT Collection</h2>
             </div>
-            <button className="hero__btn">Click to See Collection  <svg className="chevron-right" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="https://market.sadu.sovereignnature.ch" className="hero__btn">Click to See Collection  <svg className="chevron-right" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11.5 3.81057C11.1785 3.48911 10.6573 3.48911 10.3359 3.81057L7.27045 6.87599C6.89518 7.25126 6.28674 7.25126 5.91147 6.87599L2.84605 3.81057C2.52459 3.48911 2.0034 3.48911 1.68194 3.81057C1.36048 4.13203 1.36048 4.65322 1.68194 4.97468L5.91147 9.20421C6.28674 9.57948 6.89518 9.57948 7.27044 9.20421L11.5 4.97468C11.8214 4.65322 11.8214 4.13203 11.5 3.81057Z" fill="#F3E8E8"/>
                     </svg>
-                    </button>
-            <p>Entry is granted to whitelist members only. If you would like access to the whitelist click <a href="#">here</a></p>
+                    </a>
+            <p>Entry is granted to whitelist members only. If you would like access to the whitelist click <a href="https://market.sadu.sovereignnature.ch">here</a></p>
             <div className="hero__scroll">
                 <p>scroll to learn more</p>
                 <div className="scroll">
@@ -135,10 +135,13 @@ function LandingPage(){
             </Carousel>
         </div>
         <div className="about">
-            <h2 className="about__title">About Us</h2>
+            <h2 className="about__title">About Sādu</h2>
             <p className="about__text">     
-             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias repudiandae cum dolore debitis nihil, soluta sed ad autem, iusto illum explicabo enim laboriosam eligendi beatae doloribus perferendis ullam sequi reprehenderit.
-             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias repudiandae cum dolore debitis nihil, soluta sed ad autem, iusto illum explicabo enim laboriosam eligendi beatae doloribus perferendis ullam sequi reprehenderit.
+                Sādu is a play to earn mobile app for natural capital. Eco-conscious habits can feel pointless. Investing in the carbon market is complicated. Reduce your impact and gain access to the market for nature-based carbon removal by collecting eco-friendly NFTs. 
+                Download the app, subscribe, or play your favorite sport to earn trees monthly. Every tree guarantees funding to an ecosystem restoration project. The more trees you earn the more NFTs you win.
+                As a platform for digital assets with a positive environmental impact Sādu will release the first batch of NFTs on a marketplace that prioritizes the planet. Funding from the sale of every digital asset will be allocated to participating Sustainability Partners, a digital artist, and Sādu. Participating Sustainability Partners, include <a href="https://sea-trees.org/pages/about">SeaTrees</a>, <a href="https://www.thehaititreeproject.org/">The Haiti Tree Project</a>, and <a href="http://re-climate.com/en">Re-Climate 🇺🇦</a>.  They each take their own approach to restoring kelp forests, deforestation recovery, and regenerative agroforestry.  
+                The artists contributing work to this collection,  <a href="https://www.instagram.com/bondtruluv/?hl=en">Bond Truluv</a> and <a href="https://www.instagram.com/whosthereplease/">Stacie Ant</a> bring awareness to the emotional dichotomy between self-preservation, technological advancement and an innate longing to preserve the natural ecosystem. Additionally, the work of Stacie Ant implements generative artificial intelligence to make each piece truly unique for this genesis collection.
+                This batch of NFTs is a pre-release for Polkadot Kusama. A total of 1000 NFTs will be released on multiple blockchain networks. This marketplace was built in partnership with Sovereign Nature Initiative (SNI) and Unique Network.  SNI takes a 5% commission on every NFT. 
             </p>
         </div>
         <div className="collection">
@@ -148,16 +151,15 @@ function LandingPage(){
                     <h3 className="card__title">Stacie Ant</h3>
                     <div className="card__content">
                     <p className="card__text">
-                        I am creating a unique collection of 3D environments inspired by versions of futuristic Utopias. Each piece juxtaposes elements of the organic and mechanic - portrayal of a progressive future via technological advancement.
+                        I am creating a unique collection of 3D environments inspired by versions of futuristic Utopias. Each piece juxtaposes elements of the organic and mechanic — portrayal of a progressive future via technological advancement.
                     </p>
                     <div className="card__list">
                         <p>Generative Traits</p>
                         <ul>
-                            <li>Humanoid Skin</li>
-                            <li>Humanoid Hair</li>
-                            <li>Humanoid Headdress</li>
-                            <li>Humanoid Garments</li>
-                            <li>Landscape Built Environment</li>
+                            <li>Headpiece - Type A  Extremly Rare, Type B Rare, Type c Common</li>
+                            <li>Humanoid Skins - Type A extremely Rare, Type B Rare, Type C Common, Type D Common</li>
+                            <li>Couture - Type A Common, Type B Rare</li>
+                            <li>Backgrounds - Type A Common, Type B Rare</li>
                         </ul>
                     </div>
                     </div>
@@ -165,17 +167,19 @@ function LandingPage(){
                 <div className="card">
                     <h3 className="card__title">Bond Truluv</h3>
                     <div className="card__content">
-                        <p className="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, at saepe libero sint illo mollitia facere, tempora ea ut quisquam, dicta deleniti ipsam harum aspernatur reiciendis commodi incidunt. Eos, iusto!</p>
+                        <p className="card__text">For this unique collection I chose truly magical places to host my surreal digital arrangements, thus creating a symbiotic dichotomy of nature and technology.</p>
                         <div className="card__list">
-                            <p>Generative Traits</p>
+                            <p>Unique Traits</p>
                             <ul>
-                                <li>Lorem ipsum</li>
-                                <li>Lorem ipsum</li>
-                                <li>Lorem ipsum</li>
-                                <li>Lorem ipsum</li>
-                                <li>Lorem ipsum</li>
+                                <li>Colour of moving objects</li>
+                                <li>Colour of the background</li>
+                                <li>Placement of the moving object</li>
+                                <li>Size of the moving object</li>
+                                <li>Glitches, pixelations, aberrations</li>
                             </ul>
                         </div>
+                        <p className="card__text">an underlying smart contract that guarantees funding to ecosystem restoration projects.</p>
+                        <p className="card__text">This genesis collection of eco-conscious NFTs not only keeps trees alive but was also built using generative Articifical Intelligence, making every piece </p>
                     </div>
                 </div>
             </div>
