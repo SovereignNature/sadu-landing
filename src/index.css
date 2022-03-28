@@ -44,7 +44,7 @@ html {
 }
 body {
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
   font-family: 'Metropolis';  
   background: linear-gradient(to right, #003E3E 0%, #030303 100%);
   backdrop-filter: blur(47.5334px);
@@ -54,59 +54,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-left: 50rem;
-  margin-right: 50rem;
-  color: white;
-  font-family: 'Metropolis';
-}
 
-.info  h1 {
-  margin-top: 8rem;
-  margin-bottom: 8rem;
-  font-size: 5rem;
-  font-weight: 400;
-  line-height: 1;
-  text-transform: uppercase;
-  text-align: center;
-
-}
-
-.info p {
-  font-size: 2rem;
-  text-align: center;
-}
-
-.info p a{
-  color: #fff;
-  font-weight: 600;
-  transition: letter-spacing .2s;
-}
-
-.info p a:hover {
-  letter-spacing: 1.5px;
-}
-
-.info .info__btn {
-  background: linear-gradient(to right, #697E7F 0%, #190634 100%);
-  width: 100%;
-  padding: 2rem;
-  border: none;
-  border-radius: 2rem;
-  color: #DFCBD0;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  transition: all .2s;
-}
-
-.info .info__btn:hover {
-  cursor: pointer;
-  border-bottom: 4px solid #003E3E;
-  transform: translateY(-4px);
+.section {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .hero {
@@ -116,9 +67,12 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 10rem;
-  margin-left: 50rem;
-  margin-right: 50rem;
+  margin-bottom: 10rem;
   color: white;
+}
+
+.hero .hero__logo {
+  width: auto;
 }
 
 .hero .hero__title {
@@ -127,8 +81,7 @@ body {
 }
 
 .hero .hero__title h1 {
-  font-size: 7rem;
-  font-weight: 600;
+  font-size: 4rem;
   line-height: 1;
   text-transform: uppercase;
   text-align: center;
@@ -136,8 +89,7 @@ body {
 }
 
 .hero .hero__title h2 {
-  font-size: 6rem;
-  font-weight: 600;
+  font-size: 3rem;
   line-height: 1;
   text-align: center;
   margin: 0;
@@ -168,23 +120,13 @@ body {
 }
 
 .hero p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
-}
-
-.hero p a{
-  color: #fff;
-  font-weight: 600;
-  transition: letter-spacing .2s;
-}
-
-.hero p a:hover {
-  letter-spacing: 1.5px;
 }
 
 .hero .hero__scroll {
   text-align: center;
-  margin-top: 10rem;
+  margin-top: 20rem;
 }
 
 .hero .hero__scroll .scroll{
@@ -222,14 +164,91 @@ body {
   font-weight: 200;
 }
 
+.tutorial {
+  font-family: 'Metropolis';
+  margin-top: 20rem;
+  margin-bottom: 20rem;
+  color: #fff;
+}
+
+.tutorial .carousel {
+  color: #fff;
+}
+
+.tutorial .carousel .carousel-inner {
+  text-align: center;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.tutorial .tutorial__buttons .tutorial__button {
+  background-color: #203D3D;
+  color: #fff;
+  font-size: 2rem;
+  border: none;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 5px 4px rgba(32, 61, 61, 0.44);
+  transition: box-shadow .2s;
+}
+.tutorial .tutorial__buttons .tutorial__button:not(:last-of-type) {
+  margin-bottom: 3rem;
+}
+
+.tutorial .tutorial__buttons .tutorial__button:hover {
+  box-shadow: 0px 0px 4px 3px rgba(197, 255, 229, 0.80);
+}
+
+.tutorial .tutorial__buttons .tutorial__button.active {
+  font-weight: 600;
+  background-color: #c5ffe5;
+  color: #203D3D;
+}
+
+.tutorial .carousel .carousel-inner .carousel__img {
+  width: 100%
+}
+
+.tutorial .carousel .carousel-inner .carousel__content .carousel__list {
+  text-align: center;
+  padding: 0%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  counter-reset: number;
+  list-style-type: none;
+}
+
+.tutorial .carousel .carousel-inner .carousel__content .carousel__list .carousel__item::before{
+  counter-increment: number;
+  content: counter(number)"\a0";
+  font-size: 5rem;
+}
+
+.tutorial .carousel .carousel-inner .carousel__content .carousel__list .carousel__item {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.tutorial .carousel .carousel-inner .carousel__content .carousel__list .carousel__item .item__title {
+  font-size: 2.5rem;
+}
+
+.tutorial .carousel .carousel-inner .carousel__content .carousel__list .carousel__item .item__text {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
 .about {
   font-family: 'Metropolis';
-  padding: 10rem 50rem;
+  text-align: center;
+  margin-top: 20rem;
+  margin-bottom: 20rem;
   color: white;
 }
+
 .about .about__title {
   font-size: 4rem;
-  font-weight: 400;
   margin-bottom: 4rem;
   line-height: 1;
   text-align: center;
@@ -238,14 +257,25 @@ body {
 
 .about .about__text {
   font-size: 2rem;
-  font-weight: 200;
   line-height: 2;
-  
+  word-spacing: 4px;
+  margin-bottom: 5rem;
+}
+
+.about .about__text a {
+  color: #fff;
+  font-weight: 600;
+  transition: letter-spacing .2s;
+}
+
+.about .about__text a:hover {
+  letter-spacing: 1.5px;
 }
 
 .collection {
   font-family: 'Metropolis';
-  padding: 10rem 50rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
   color: white;
 }
 
@@ -258,17 +288,14 @@ body {
   text-transform: uppercase;
 }
 
-.collection .collection__cards {
-  display: flex;
-  justify-content: space-between;
-}
-
 .collection .collection__cards .card {
   background-color: #203D3D;
-  margin: 2rem;
   border-radius: 1rem;
-  margin-bottom: 0;
   box-shadow: 0px 0px 5px 3px rgba(32, 61, 61, 0.44);
+}
+
+.collection .collection__cards .card:not(:last-of-type) {
+  margin-bottom: 5rem;
 }
 
 .collection .collection__cards .card .card__title {
@@ -280,28 +307,23 @@ body {
   margin-bottom: 0;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   font-weight: 600;
   text-align: center;
 }
 
 .collection .collection__cards .card .card__content {
-  padding: 2rem 3rem;
-}
-
-.collection .collection__cards .card .card__content .card__text{
-  font-size: 2rem;
-}
-
-.collection .collection__cards .card .card__content .card__list{
+  padding: 2rem;
   font-size: 2rem;
 }
 
 .faq {
   font-family: 'Metropolis';
-  padding: 10rem 50rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
   color: white;
 }
+
 .faq .faq__title {
   font-size: 4rem;
   font-weight: 400;
@@ -354,18 +376,15 @@ body {
 .footer {
   font-family: 'Metropolis';
   color: #fff;
-  min-height: 30rem;
   width: 100%;
-  padding-top: 4rem;
-  padding-left: 50rem;
-  padding-right: 50rem;
-  border-top: 1px solid #fff;
-  display: inline-grid;
-  grid-template-columns: minmax(min-content, 2fr) repeat(3,minmax(max-content, 1fr));
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  text-align: center;
 }
 
 .footer .footer__logo {
   font-size: 1.25rem;
+  padding: 2rem;
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -375,8 +394,7 @@ body {
 }
 
 .footer .footer__logo .poweredBy {
-  display: flex;
-  align-items: center;
+  margin-bottom: 3rem;
 }
 
 .footer .footer__logo .poweredBy .sni-brand {
@@ -388,8 +406,11 @@ body {
 }
 
 .footer .footer__link {
-  font-size: 1.75rem;
-  padding-left: 2rem;
+  font-size: 2rem;
+  padding-top: 3rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -399,7 +420,7 @@ body {
 }
 
 .footer .footer__link ul li{
-  padding-bottom: 1.5rem;
+  padding-bottom: 3rem;
 }
 
 .footer .footer__link ul li a {
@@ -417,94 +438,219 @@ body {
   text-decoration: underline;
 }
 
-.tutorial {
-  font-family: 'Metropolis';
-  margin: 20rem 50rem;
 
-  color: #fff;
+@media screen and (min-width: 768px) {
+  .section {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .tutorial .tutorial__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  .tutorial .tutorial__buttons .tutorial__button { 
+    padding: 3rem;
+  }
+
+  .tutorial .tutorial__buttons .tutorial__button:not(:last-of-type) {
+    margin-bottom: auto;
+    margin-right: 2rem;
+  }
+
+  .collection .collection__cards {
+    padding: 3rem 8rem;
+  }
+
+  .faq .accordion {
+    padding: 3rem 8rem;
+  }
+
+  .footer .footer__link {
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
 }
 
-.tutorial .carousel {
-  color: #fff;
-  width: 100%;
-  min-height: min-content;
-}
-
-.tutorial .tutorial__buttons {
-  display: flex;
-  justify-content: space-between;
-}
-
-.tutorial .tutorial__buttons .tutorial__button {
-  background-color: #203D3D;
-  color: #fff;
-  font-size: 2rem;
-  border: none;
-
-  padding: 1rem 2rem ;
-  border-radius: 1rem;
-  box-shadow: 0px 0px 5px 4px rgba(32, 61, 61, 0.44);
-  transition: box-shadow .2s;
-}
-.tutorial .tutorial__buttons .tutorial__button:not(:last-of-type) {
-  margin-right: 2rem;
-}
-
-.tutorial .tutorial__buttons .tutorial__button:hover {
+@media screen and (min-width: 1024px) {
+  .section {
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }
   
-  box-shadow: 0px 0px 4px 3px rgba(197, 255, 229, 0.80);
+  .hero .hero__title {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+  
+  .hero .hero__title h1 {
+    font-size: 7rem;
+    line-height: 1;
+  }
+  
+  .hero .hero__title h2 {
+    font-size: 6rem;
+    line-height: 1;
+  }
+  
+  .hero .hero__btn {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero p {
+    font-size: 2rem;
+  }
+
+  .hero .hero__scroll {
+    margin-top: 10rem;
+  }
+
+  .tutorial {
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+  }
+  
+  .tutorial .tutorial__buttons .tutorial__button {
+    width: 100%;
+    font-size: 2rem;
+    padding: 2rem 3rem;
+  }
+  
+  .tutorial .carousel .carousel-inner .carousel__content .carousel__list {
+    text-align: left;
+    margin: 5rem;
+    counter-reset: number;
+    list-style-type: none;
+  }
+  .tutorial .carousel .carousel-inner .carousel__content .carousel__list .carousel__item {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  .tutorial .carousel .carousel-inner .carousel__content .carousel__list .carousel__item::before{
+    counter-increment: number;
+    content: counter(number)"\a0";
+    font-size: 7rem;
+    margin-right: 2rem;
+  }
+  
+  .tutorial .carousel .carousel-inner .carousel__content .carousel__list .carousel__item {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .tutorial .carousel .carousel-inner .carousel__content .carousel__list .carousel__item .item__title {
+    font-size: 3rem;
+    width: 20rem;
+  }
+  
+  .tutorial .carousel .carousel-inner .carousel__content .carousel__list .carousel__item .item__text {
+    margin-left: 5rem;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .about {
+    text-align: left;
+  }
+  .collection {
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+  }
+
+  .collection .collection__cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+  
+  .collection .collection__cards .card {
+    margin: 2rem;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  
+  .collection .collection__cards .card .card__content {
+    padding: 3rem;
+  }
+  
+  .faq .accordion{
+    padding: 0;
+  }
+  
+  .footer {
+    width: 100%;
+    padding-top: 4rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    text-align: left;
+    border-top: 1px solid #fff;
+    display: inline-grid;
+    grid-template-columns: minmax(min-content, 2fr) repeat(3,minmax(max-content, 1fr));
+  }
+  
+  .footer .footer__logo {
+    padding: 0;
+  }
+  
+  .footer .footer__logo .logo {
+    width: 16%;
+    margin-bottom: 6rem;
+  }
+  
+  .footer .footer__logo .poweredBy {
+    display: flex;
+    align-items: center;
+  }
+  
+
+  .footer .footer__link {
+    border: none;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
-.tutorial .tutorial__buttons .tutorial__button.active {
-  background-color: #c5ffe5;
-  color: #203D3D;
-}
+@media screen and (min-width: 1296px) { 
+  .section {
+    padding-left: 30rem;
+    padding-right: 30rem;
+  }
 
-.tutorial .carousel .carousel-inner {
-  text-align: center;
-  padding: 8rem 2rem;
-}
+  .hero .hero__title {
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+  }
 
-.tutorial .carousel .carousel-inner .carousel__img {
-  width: 100%
-}
+  .hero .hero__title h1 {
+    margin-bottom: 2rem;
+  }
 
-.tutorial .carousel .carousel-inner .carousel__content .carousel__list {
-  text-align: left;
-  margin: 5rem 3rem;
-  counter-reset: number;
-  list-style-type: none;
-}
+  .hero .hero__btn {
+    font-size: 2.5rem;
+  }
 
-.tutorial .carousel .carousel-inner .carousel__content .carousel__list .carousel__item::before{
-  counter-increment: number;
-  content: counter(number)"\a0";
-  font-size: 4rem;
-  margin-right: 2rem;
-}
 
-.tutorial .carousel .carousel-inner .carousel__content .carousel__list .carousel__item {
-  display: flex;
-  align-items: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
+  .hero .hero__scroll {
+    margin-top: 22rem;
+  }
 
-.tutorial .carousel .carousel-inner .carousel__content .carousel__list .carousel__item {
+  .tutorial .carousel .carousel-inner .carousel__img {
+    width: 80%;
+  }
 
-  column-gap: 2rem;
-}
+  .about .about__title,
+  .collection .collection__title,
+  .faq .faq__title {
+    font-size: 5rem;
+  }
 
-.tutorial .carousel .carousel-inner .carousel__content .carousel__list .carousel__item .item__title {
-  font-size: 1.5rem;
-  line-break: strict;
-}
-
-.tutorial .carousel .carousel-inner .carousel__content .carousel__list .carousel__item .item__text {
-  font-size: 1.25rem;
-  line-height: 2.5rem;
-}
-
-.tutorial .carousel .carousel-inner .carousel__content .carousel__list .carousel__item .item__text .subtext {
-  font-size: 1rem;
+  .footer {
+    padding-left: 50rem;
+    padding-right: 50rem;
+  }
 }
