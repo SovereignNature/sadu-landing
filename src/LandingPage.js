@@ -46,7 +46,7 @@ function LandingPage(){
         <div className="tutorial section">
             <div className="tutorial__buttons">
                 <button className={`tutorial__button ${index === 0 ? "active" : ""}`} onClick={() => onStep(0)}>I want to setup a Polkadot wallet</button>
-                <button className={`tutorial__button ${index === 1 ? "active" : ""}`} onClick={() => onStep(1)}>I want to get more KSM tokens</button>
+                <button className={`tutorial__button ${index === 1 ? "active" : ""}`} onClick={() => onStep(1)}>I want to buy Kusama tokens</button>
                 
             </div>
             <Carousel controls={false} interval={null} activeIndex={index} indicators={false}>
@@ -55,24 +55,23 @@ function LandingPage(){
                     <div className="carousel__content">
                         <ol className='carousel__list'>
                             <li className='carousel__item'>
-                                <p className='item__title'>Download the Plugin</p>
-                                <p className='item__text'>XXXXXXXXXXXXXX</p>
+                                <p className='item__title'>Download the extension</p>
+                                <p className='item__text'>Install the Polkadot extension to your browser.</p>
                             </li>
                             <li className='carousel__item'>
                                 <p className='item__title'>Create the wallet</p>
-                                <p className='item__text'>XXXXXXXXXXXXXX</p>
+                                <div>
+                                    <p className='item__text'>Create your wallet with this extension.</p>
+                                    <p className="item__disclaimer">Beware!! Do not share your wallet seed or password with anyone. As well, do not store it on the cloud. Because this could cause you to lose your wallet.</p>
+                                </div>
                             </li>
                             <li className='carousel__item'>
-                                <p className='item__title'>Buy KSM</p>
-                                <p className='item__text'>Buying KSM online with fiat.</p>
+                                <p className='item__title'>Choose Kusama Chain</p>
+                                <p className='item__text'>Lastly, choose “Kusama chain” from the dropdown button.</p>
                             </li>
                             <li className='carousel__item'>
-                                <p className='item__title'>Load KSM to your wallet</p>
-                                <p className='item__text'>XXXXXXXXXXXXXX</p>
-                            </li>
-                            <li className='carousel__item'>
-                                <p className='item__title'>Enjoy the exhibition!</p>
-                                <p className='item__text'>Explore the NFTs and view them in your gallery</p>
+                                <p className='item__title'>Well done!</p>
+                                <p className='item__text'>You’ve created your Polkadot wallet on Kusama chain!</p>
                             </li>
                         </ol>
                     </div>
@@ -82,16 +81,23 @@ function LandingPage(){
                     <div className="carousel__content">
                         <ol className='carousel__list'>
                             <li className='carousel__item'>
+                                <p className='item__title'>Sign up at Kraken Platform</p>
+                                <p className='item__text'>You need an exchange platform to buy Kusama crypto. We recommend you to use the Kraken platform.</p>
+                            </li>
+                            <li className='carousel__item'>
                                 <p className='item__title'>Buy KSM</p>
-                                <p className='item__text'>Buy KSM with fiat (dollars, euro)...</p>
+                                <p className='item__text'>There are two ways of buying KSM on Kraken platform: (1) The first option is purchasing crypto with a credit or debit card. (2) The second option is that buying crypto with the money on your Kraken account.</p>
                             </li>
                             <li className='carousel__item'>
-                                <p className='item__title'>Load KSM to your wallet</p>
-                                <p className='item__text'>XXXXXXXXXXXXX</p>
+                                <p className='item__title'>Transfer KSM from Kraken to Polkadot wallet</p>
+                                <div>
+                                    <p className='item__text'>You need to withdraw Kusama from your Kraken account.</p>
+                                    <p className="item__disclaimer">Be careful!! Your withdrawal address must be the same address as your Polkadot wallet address that is on the Kusama chain.</p>
+                                </div>
                             </li>
                             <li className='carousel__item'>
-                                <p className='item__title'>Enjoy the exhibition</p>
-                                <p className='item__text'>Now that you have KSM coins in your wallet. Explore the NFTs and view them in your gallery.</p>
+                                <p className='item__title'>Well done!</p>
+                                <p className='item__text'>You’ve purchased Kusama!</p>
                             </li>
                         </ol>
                     </div>
@@ -150,8 +156,6 @@ function LandingPage(){
                                 <li>Glitches, pixelations, aberrations</li>
                             </ul>
                         </div>
-                        <p className="card__text">an underlying smart contract that guarantees funding to ecosystem restoration projects.</p>
-                        <p className="card__text">This genesis collection of eco-conscious NFTs not only keeps trees alive but was also built using generative Articifical Intelligence, making every piece </p>
                     </div>
                 </div>
             </div>

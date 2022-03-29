@@ -239,6 +239,12 @@ body {
   line-height: 2.5rem;
 }
 
+.tutorial .carousel .carousel-inner .carousel__content .carousel__list .carousel__item .item__disclaimer {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #D84F53;
+}
+
 .about {
   font-family: 'Metropolis';
   text-align: center;
@@ -564,7 +570,8 @@ body {
   }
   
   .tutorial .carousel .carousel-inner .carousel__content .carousel__list .carousel__item {
-    display: flex;
+    display: inline-grid;
+    grid-template-columns: min-content min-content minmax(min-content, 1fr);
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -575,7 +582,8 @@ body {
     width: 20rem;
   }
   
-  .tutorial .carousel .carousel-inner .carousel__content .carousel__list .carousel__item .item__text {
+  .tutorial .carousel .carousel-inner .carousel__content .carousel__list .carousel__item .item__text,
+  .tutorial .carousel .carousel-inner .carousel__content .carousel__list .carousel__item .item__disclaimer {
     margin-left: 5rem;
     font-size: 2rem;
     line-height: 3rem;
@@ -590,9 +598,8 @@ body {
   }
 
   .collection .collection__cards {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
+    display: inline-flex;
+    gap: 6rem;
   }
   
   .collection .collection__cards .card {
@@ -601,6 +608,10 @@ body {
     margin-bottom: 0;
   }
   
+  .collection .collection__cards .card:not(:last-of-type) {
+    margin-bottom: 0;
+  }
+
   .collection .collection__cards .card .card__content {
     padding: 3rem;
   }
