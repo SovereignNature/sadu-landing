@@ -52,7 +52,7 @@ function LandingPage(){
             </div>
             <Carousel controls={false} interval={null} activeIndex={index} indicators={false}>
                 <Carousel.Item>
-                    <img className="carousel__img" src={tutorial} alt='Tutorial'/>
+                <iframe className="carousel__video" src="https://www.youtube.com/embed/OImeySrC6n0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div className="carousel__content">
                         <ol className='carousel__list'>
                             <li className='carousel__item'>
@@ -78,7 +78,7 @@ function LandingPage(){
                     </div>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img className="carousel__img" src={tutorial} alt='Tutorial'/>
+                <iframe className="carousel__video" src="https://www.youtube.com/embed/uLnq6emvr8k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div className="carousel__content">
                         <ol className='carousel__list'>
                             <li className='carousel__item'>
