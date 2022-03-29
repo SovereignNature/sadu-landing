@@ -107,19 +107,19 @@ function LandingPage(){
         <div className="about section">
             <h2 className="about__title">About Sādu</h2>
             <p className="about__text">
-                Sādu is a play to earn mobile app for natural capital. Eco-conscious habits can feel pointless. Investing in the carbon market is complicated. Reduce your impact and gain access to the market for nature-based carbon removal by collecting eco-friendly NFTs. 
+                Sādu is a play to earn mobile app for natural capital. Eco-conscious habits can feel pointless. Investing in the carbon market is complicated. Reduce your impact and gain access to the market for carbon removal by collecting eco-friendly NFTs.
             </p>
             <p className="about__text">
-                Download the app, subscribe, or play your favorite sport to earn trees monthly. Every tree guarantees funding to an ecosystem restoration project. The more trees you earn the more NFTs you win.
+                Download the app, subscribe, or play your favourite sport to earn trees monthly. Every tree guarantees funding to an ecosystem restoration project. The more trees you earn the more NFTs you win.
             </p>
             <p className="about__text">
-            As a platform for digital assets with a positive environmental impact Sādu will release the first batch of NFTs on a marketplace that prioritizes the planet. Funding from the sale of every digital asset will be allocated to participating Sustainability Partners, a digital artist, and Sādu. Participating Sustainability Partners, include <a href="https://sea-trees.org/pages/about" target="_blank">SeaTrees</a>, <a href="https://www.thehaititreeproject.org/" target="_blank">The Haiti Tree Project</a>, and <a href="http://re-climate.com/en" target="_blank">Re-Climate 🇺🇦</a>.  They each take their own approach to restoring kelp forests, deforestation recovery, and regenerative agroforestry.
+                As a platform for digital assets with a positive environmental impact Sādu will release the first batch of NFTs on a marketplace that prioritizes the planet. Funding from the sale of every digital asset will be allocated to participating Sustainability Partners, a digital artist, and Sādu. Participating Sustainability Partners, include <a href="https://sea-trees.org/pages/about" target="_blank">SeaTrees</a>, <a href="https://www.thehaititreeproject.org/" target="_blank">The Haiti Tree Project</a>, and <a href="http://re-climate.com/en" target="_blank">Re-Climate 🇺🇦</a>.  They each take their own approach to restoring kelp forests, deforestation recovery, and regenerative agroforestry.
             </p>
             <p className="about__text">
-            The artists contributing work to this collection,  <a href="https://www.instagram.com/bondtruluv/?hl=en" target="_blank">Bond Truluv</a> and <a href="https://www.instagram.com/whosthereplease/" target="_blank">Stacie Ant</a> bring awareness to the emotional dichotomy between self-preservation, technological advancement and an innate longing to preserve the natural ecosystem. Additionally, the work of Stacie Ant implements generative artificial intelligence to make each piece truly unique for this genesis collection.
+                The artists contributing work to this collection,  <a href="https://www.instagram.com/bondtruluv/?hl=en" target="_blank">Bond Truluv</a> and <a href="https://www.instagram.com/whosthereplease/" target="_blank">Stacie Ant</a> bring awareness to the emotional dichotomy between self-preservation, technological advancement and an innate longing to preserve the natural ecosystem. Additionally, the work of Stacie Ant implements generative artificial intelligence to make each piece truly unique for this genesis collection.
             </p>
             <p className="about__text">
-            This batch of NFTs is a pre-release for Polkadot Kusama. A total of 1000 NFTs will be released on multiple blockchain networks. This marketplace was built in partnership with Sovereign Nature Initiative (SNI) and Unique Network.  SNI takes a 5% commission on every NFT.
+                This batch of NFTs is a pre-release for Polkadot Kusama. A total of 1000 NFTs will be released on multiple blockchain networks. This marketplace was built in partnership with Sovereign Nature Initiative (SNI) and Unique Network.  SNI takes a 5% commission on every NFT.
             </p>
         </div>
         <div className="collection section">
@@ -156,6 +156,7 @@ function LandingPage(){
                                 <li>Glitches, pixelations, aberrations</li>
                             </ul>
                         </div>
+                        <p className="card__text">Genesis collection pre-release by Sādu. Reduce your environmental impact by collecting eco-friendly digital assets.</p>
                     </div>
                 </div>
             </div>
