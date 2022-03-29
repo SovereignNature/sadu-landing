@@ -1,6 +1,5 @@
 import React from 'react';
 import logo from './assets/sadu-logo.png';
-import tutorial from './assets/tutorial.png';
 import Accordion from 'react-bootstrap/Accordion';
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
