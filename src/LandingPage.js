@@ -16,32 +16,33 @@ function LandingPage(){
     return(
         <>
         <div className="hero section">
-            <img className="hero__logo" src={logo} alt='Sadu logo'/>
-            <div className='hero__title'>
-                <h1>Genesis Eco-conscious</h1>
-                <h2>NFT Collection</h2>
-            </div>
-            <a href="https://market.sadu.sovereignnature.ch" className="hero__btn">Click to See Collection  <svg className="chevron-right" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11.5 3.81057C11.1785 3.48911 10.6573 3.48911 10.3359 3.81057L7.27045 6.87599C6.89518 7.25126 6.28674 7.25126 5.91147 6.87599L2.84605 3.81057C2.52459 3.48911 2.0034 3.48911 1.68194 3.81057C1.36048 4.13203 1.36048 4.65322 1.68194 4.97468L5.91147 9.20421C6.28674 9.57948 6.89518 9.57948 7.27044 9.20421L11.5 4.97468C11.8214 4.65322 11.8214 4.13203 11.5 3.81057Z" fill="#F3E8E8"/>
-                    </svg>
-                    </a>
-            <div className="hero__scroll">
-                <p>scroll to learn more</p>
-                <div className="scroll">
-                    <svg className="mousewheel" width="17" height="29" viewBox="0 0 17 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.7992 19.8C15.7992 23.8 12.5992 27.1 8.49922 27.1C4.49922 27.1 1.19922 23.9 1.19922 19.8V8.50005C1.19922 4.50005 4.39922 1.30005 8.49922 1.30005C12.4992 1.30005 15.7992 4.50005 15.7992 8.50005V19.8Z" stroke="#F4F4F4"/>
-                    <path className='ball' d="M8.89961 10.6C8.89961 11.2 8.69961 11.6 8.49961 11.6C8.29961 11.6 8.09961 11.1 8.09961 10.6V9C8.09961 8.4 8.29961 8 8.49961 8C8.69961 8 8.89961 8.5 8.89961 9V10.6Z" stroke="#F4F4F4"/>
-                    </svg>
-                    <svg className="chevron" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g>
-                    <path d="M11.5 3.81057C11.1785 3.48911 10.6573 3.48911 10.3359 3.81057L7.27045 6.87599C6.89518 7.25126 6.28674 7.25126 5.91147 6.87599L2.84605 3.81057C2.52459 3.48911 2.0034 3.48911 1.68194 3.81057C1.36048 4.13203 1.36048 4.65322 1.68194 4.97468L5.91147 9.20421C6.28674 9.57948 6.89518 9.57948 7.27044 9.20421L11.5 4.97468C11.8214 4.65322 11.8214 4.13203 11.5 3.81057Z" fill="#F3E8E8"/>
-                    </g>
-                    <defs>
-                    <rect width="13.1786" height="13.1786" fill="white" transform="translate(13.1797) rotate(90)"/>
-                    </defs>
-                    </svg>
+            <div className="hero__content"></div>
+                <img className="hero__logo" src={logo} alt='Sadu logo'/>
+                <div className='hero__title'>
+                    <h1>Genesis Eco-conscious</h1>
+                    <h2>NFT Collection</h2>
                 </div>
-            </div>
+                <a href="https://market.sadu.sovereignnature.ch" className="hero__btn">Click to See Collection  <svg className="chevron-right" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.5 3.81057C11.1785 3.48911 10.6573 3.48911 10.3359 3.81057L7.27045 6.87599C6.89518 7.25126 6.28674 7.25126 5.91147 6.87599L2.84605 3.81057C2.52459 3.48911 2.0034 3.48911 1.68194 3.81057C1.36048 4.13203 1.36048 4.65322 1.68194 4.97468L5.91147 9.20421C6.28674 9.57948 6.89518 9.57948 7.27044 9.20421L11.5 4.97468C11.8214 4.65322 11.8214 4.13203 11.5 3.81057Z" fill="#F3E8E8"/>
+                        </svg>
+                        </a>
+                <div className="hero__scroll">
+                    <p>scroll to learn more</p>
+                    <div className="scroll">
+                        <svg className="mousewheel" width="17" height="29" viewBox="0 0 17 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.7992 19.8C15.7992 23.8 12.5992 27.1 8.49922 27.1C4.49922 27.1 1.19922 23.9 1.19922 19.8V8.50005C1.19922 4.50005 4.39922 1.30005 8.49922 1.30005C12.4992 1.30005 15.7992 4.50005 15.7992 8.50005V19.8Z" stroke="#F4F4F4"/>
+                        <path className='ball' d="M8.89961 10.6C8.89961 11.2 8.69961 11.6 8.49961 11.6C8.29961 11.6 8.09961 11.1 8.09961 10.6V9C8.09961 8.4 8.29961 8 8.49961 8C8.69961 8 8.89961 8.5 8.89961 9V10.6Z" stroke="#F4F4F4"/>
+                        </svg>
+                        <svg className="chevron" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                        <path d="M11.5 3.81057C11.1785 3.48911 10.6573 3.48911 10.3359 3.81057L7.27045 6.87599C6.89518 7.25126 6.28674 7.25126 5.91147 6.87599L2.84605 3.81057C2.52459 3.48911 2.0034 3.48911 1.68194 3.81057C1.36048 4.13203 1.36048 4.65322 1.68194 4.97468L5.91147 9.20421C6.28674 9.57948 6.89518 9.57948 7.27044 9.20421L11.5 4.97468C11.8214 4.65322 11.8214 4.13203 11.5 3.81057Z" fill="#F3E8E8"/>
+                        </g>
+                        <defs>
+                        <rect width="13.1786" height="13.1786" fill="white" transform="translate(13.1797) rotate(90)"/>
+                        </defs>
+                        </svg>
+                    </div>
+                </div>
         </div>
         <div className="tutorial section">
             <div className="tutorial__buttons">
