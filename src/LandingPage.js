@@ -245,9 +245,9 @@ function LandingPage(){
             <div className="footer__link">
                 <p>Follow Sadu</p>
                 <ul>
-                    <li><a href="https://brittanymsalas.medium.com/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://www.linkedin.com/company/s%C4%81du/" target="_blank">LinkedIn</a></li>
                     <li><a href="https://www.instagram.com/sadu_app/" target="_blank">Instagram</a></li>
-                    <li><a href="https://www.linkedin.com/company/s%C4%81du/" target="_blank">Medium</a></li>
+                    <li><a href="https://brittanymsalas.medium.com/" target="_blank">Medium</a></li>
                 </ul>
             </div>
         </footer>

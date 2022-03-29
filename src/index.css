@@ -410,8 +410,8 @@ body {
   font-family: 'Metropolis';
   color: #fff;
   width: 100%;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   text-align: center;
 }
 
@@ -431,10 +431,8 @@ body {
 }
 
 .footer .footer__logo .poweredBy .sni-brand {
-  width: 3rem;
-  height: 3rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  width: 5rem;
+  height: 5rem;
 }
 .footer .footer__logo .poweredBy .unique {
   margin-left: 1rem;
@@ -656,11 +654,6 @@ body {
   .footer .footer__logo .logo {
     width: 16%;
     margin-bottom: 6rem;
-  }
-  
-  .footer .footer__logo .poweredBy {
-    display: flex;
-    align-items: center;
   }
   
 
