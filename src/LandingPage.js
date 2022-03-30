@@ -8,8 +8,18 @@ function LandingPage(){
     const [index, setIndex] = React.useState(0);
     let currentYear = new Date().getFullYear();
 
+    const stopAllYoutubeVideos = () => {
+        const iframes = document.querySelectorAll('iframe');
+
+        Array.prototype.forEach.call(iframes, iframe => { 
+            iframe.contentWindow.postMessage(JSON.stringify({ event: 'command', 
+          func: 'stopVideo' }), '*');
+         });
+    }
+
     const onStep = (number) => {
         setIndex(number);
+        stopAllYoutubeVideos();
     }
 
     return(
@@ -51,7 +61,7 @@ function LandingPage(){
             </div>
             <Carousel controls={false} interval={null} activeIndex={index} indicators={false}>
                 <Carousel.Item>
-                <iframe className="carousel__video" src="https://www.youtube.com/embed/OImeySrC6n0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe className="carousel__video" src="https://www.youtube.com/embed/OImeySrC6n0?enablejsapi=1" title="Download the extension" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div className="carousel__content">
                         <ol className='carousel__list'>
                             <li className='carousel__item'>
@@ -77,7 +87,7 @@ function LandingPage(){
                     </div>
                 </Carousel.Item>
                 <Carousel.Item>
-                <iframe className="carousel__video" src="https://www.youtube.com/embed/uLnq6emvr8k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe className="carousel__video" src="https://www.youtube.com/embed/uLnq6emvr8k?enablejsapi=1" title="Sign up at Kraken Platform" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div className="carousel__content">
                         <ol className='carousel__list'>
                             <li className='carousel__item'>
