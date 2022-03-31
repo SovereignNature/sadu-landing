@@ -66,6 +66,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
   padding-top: 10rem;
   padding-bottom: 10rem;
   color: white;
@@ -455,21 +456,35 @@ body {
 
 .footer .footer__link ul li{
   padding-bottom: 3rem;
+  color: #fff;
+  fill: #fff;
+}
+
+.footer .footer__link ul li:hover {
+  color: #c5ffe5;
+  fill: #c5ffe5;
 }
 
 .footer .footer__link ul li a {
-  color: #fff;
+  color: inherit;
   text-decoration: none;
-  transition: letter-spacing .2s;
-}
-
-.footer .footer__link ul li a:hover {
-  letter-spacing: 1.5px;
+  transition: all .2s;
 }
 
 .footer .footer__link ul li a.link {
-  color: #fff;
+  color: inherit;
   text-decoration: underline;
+}
+
+.footer .footer__link .social li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .footer__link .social li a svg {
+  fill: inherit;
+  margin-left: 1rem;
 }
 
 
@@ -643,7 +658,8 @@ body {
     text-align: left;
     border-top: 1px solid #fff;
     display: inline-grid;
-    grid-template-columns: minmax(min-content, 2fr) repeat(3,minmax(max-content, 1fr));
+    gap: 1rem;
+    grid-template-columns: minmax(min-content, 2fr) minmax(max-content, 1fr) minmax(max-content, 2fr) minmax(max-content, 1fr);
   }
   
   .footer .footer__logo {
@@ -661,7 +677,25 @@ body {
     border: none;
     padding: 0;
     margin-left: 0;
-    margin-right: 0;
+    margin-right: 3rem;
+  }
+
+  .footer .footer__link .social {
+    display: grid;
+    grid-template-columns:  repeat(2, minmax(max-content, 1fr));
+  }
+
+  .footer .footer__link .social li a {
+    display: grid;
+    align-items: center;
+    gap: 1rem;
+    grid-template-columns:  repeat(2, minmax(min-content, 1fr));
+  }
+  
+  .footer .footer__link .social li a svg {
+    fill: inherit;
+    display: grid;
+    grid-template-columns:  repeat(2, minmax(min-content, 1fr));
   }
 }
 
@@ -687,6 +721,15 @@ body {
 
   .hero .hero__scroll {
     margin-top: 22rem;
+  }
+
+  .about {
+    padding-left: 50rem;
+    padding-right: 50rem;
+  }
+
+  .tutorial .carousel .carousel-inner .carousel__content .carousel__list {
+    margin: 5rem 30rem;
   }
 
   .tutorial .carousel .carousel-inner .carousel__video {
