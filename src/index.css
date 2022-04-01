@@ -435,13 +435,23 @@ body {
   margin-bottom: 3rem;
 }
 
-.footer .footer__logo .poweredBy .sni-brand {
-  width: 5rem;
-  height: 5rem;
+.footer .footer__logo .poweredBy .poweredBy__link {
+  color: rgba(255, 255, 255, 0.5);
+  transition: color .3s;
 }
+
+.footer .footer__logo .poweredBy .poweredBy__link:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
 .footer .footer__logo .poweredBy .unique {
   margin-left: 1rem;
   width: 10rem;
+  transition: fill .3s;
+}
+
+.footer .footer__logo .poweredBy .unique:hover {
+  fill: rgba(255, 255, 255, 0.8);;
 }
 
 .footer .footer__link {
@@ -739,6 +749,9 @@ body {
     padding-right: 10rem;
   }
   
+  .footer .footer__logo .poweredBy .poweredBy__link {
+    text-decoration: none;
+  }
 
   .footer .footer__links {
     display: inline-grid;
@@ -757,6 +770,7 @@ body {
     display: grid;
     grid-template-columns:  repeat(2, minmax(max-content, 1fr));
   }
+
 
   .footer .footer__link .social li a {
     display: grid;
