@@ -63,7 +63,7 @@ function LandingPage(){
                 The artists contributing work to this collection,  <a href="https://www.instagram.com/bondtruluv/?hl=en" target="_blank">Bond Truluv</a> and <a href="https://www.instagram.com/whosthereplease/" target="_blank">Stacie Ant</a> bring awareness to the emotional dichotomy between self-preservation, technological advancement and an innate longing to preserve the natural ecosystem. Additionally, the work of Stacie Ant implements generative artificial intelligence to make each piece truly unique for this genesis collection.
             </p>
             <p className="about__text">
-                This batch of NFTs is a pre-release for Polkadot Kusama. A total of 1000 NFTs will be released on multiple blockchain networks. This marketplace was built in partnership with Sovereign Nature Initiative (SNI) and Unique Network.  SNI takes a 5% commission on every NFT.
+                This batch of NFTs is a pre-release for Polkadot Kusama. A total of 1000 NFTs will be released on multiple blockchain networks. This marketplace was built in partnership with Sovereign Nature Initiative (SNI) and Unique Network.  SNI takes a 5% commission on every NFT to will conservation partner projects.
             </p>
         </div>
         <div className="collection section">
