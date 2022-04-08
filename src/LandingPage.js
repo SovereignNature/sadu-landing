@@ -25,6 +25,7 @@ function LandingPage(){
 
     return(
         <>
+        <div className="hero__background"></div>
         <div className="hero section">
             <div className="hero__content"></div>
                 <img className="hero__logo" src={logo} alt='Sadu logo'/>
