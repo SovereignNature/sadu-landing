@@ -79,10 +79,10 @@ function LandingPage(){
                     <div className="card__list">
                         <p>Generative Traits</p>
                         <ul>
-                            <li>Headpiece - Type A  Extremly Rare, Type B Rare, Type c Common</li>
-                            <li>Humanoid Skins - Type A extremely Rare, Type B Rare, Type C Common, Type D Common</li>
+                            <li>Headpiece - Type A  Extremely Rare, Type B Rare, Type C Common</li>
+                            <li>Humanoid Skin - Type A Extremely Rare, Type B Rare, Type C Common, Type D Common</li>
                             <li>Couture - Type A Common, Type B Rare</li>
-                            <li>Backgrounds - Type A Common, Type B Rare</li>
+                            <li>Outer Space - Type A Common, Type B Rare</li>
                         </ul>
                     </div>
                     </div>
@@ -101,7 +101,6 @@ function LandingPage(){
                                 <li>Glitches, pixelations, aberrations</li>
                             </ul>
                         </div>
-                        <p className="card__text">Genesis collection pre-release by Sādu. Reduce your environmental impact by collecting eco-friendly digital assets.</p>
                     </div>
                 </div>
             </div>
