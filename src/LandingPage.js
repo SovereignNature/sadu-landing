@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './assets/sadu-logo.png';
+import logo from './assets/sadu-logo.svg';
 import Accordion from 'react-bootstrap/Accordion';
 import Carousel from 'react-bootstrap/Carousel';
 import Navbar from 'react-bootstrap/Navbar';
@@ -79,10 +79,10 @@ function LandingPage(){
                     <div className="card__list">
                         <p>Generative Traits</p>
                         <ul>
-                            <li>Headpiece - Type A  Extremely Rare, Type B Rare, Type C Common</li>
-                            <li>Humanoid Skin - Type A Extremely Rare, Type B Rare, Type C Common, Type D Common</li>
-                            <li>Couture - Type A Common, Type B Rare</li>
-                            <li>Outer Space - Type A Common, Type B Rare</li>
+                            <li>Headpiece - Extremely Rare, Rare,Common</li>
+                            <li>Humanoid Skin - Extremely Rare, Rare, Common</li>
+                            <li>Couture - Common, Rare</li>
+                            <li>Outer Space - Common, Rare</li>
                         </ul>
                     </div>
                     </div>
@@ -94,11 +94,11 @@ function LandingPage(){
                         <div className="card__list">
                             <p>Unique Traits</p>
                             <ul>
-                                <li>Colour of moving objects</li>
-                                <li>Colour of the background</li>
-                                <li>Placement of the moving object</li>
-                                <li>Size of the moving object</li>
-                                <li>Glitches, pixelations, aberrations</li>
+                                <li>Colour of Moving Objects</li>
+                                <li>Colour of the Background</li>
+                                <li>Placement of the Moving Object</li>
+                                <li>Size of the Moving Object</li>
+                                <li>Glitches, Pixelations, Aberrations</li>
                             </ul>
                         </div>
                     </div>
