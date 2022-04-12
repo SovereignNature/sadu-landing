@@ -79,8 +79,8 @@ function LandingPage(){
                     <div className="card__list">
                         <p>Generative Traits</p>
                         <ul>
-                            <li>Headpiece - Extremely Rare, Rare,Common</li>
-                            <li>Humanoid Skin - Extremely Rare, Rare, Common</li>
+                            <li>Headpiece - Extremely Rare, Rare, Common</li>
+                            <li>Humanoid Skin - Extremely Rare, Rare, Common Type 1, Common Type 2</li>
                             <li>Couture - Common, Rare</li>
                             <li>Outer Space - Common, Rare</li>
                         </ul>
